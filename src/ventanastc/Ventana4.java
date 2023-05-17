@@ -215,7 +215,7 @@ public class Ventana4 extends javax.swing.JFrame {
         domi = dom.getText();
         hora = horario.getSelectedItem().toString();
         aSQL = "INSERT INTO listado (Nombre, Direccion, Horario_de_atencion)"+ "VALUES (?,?,?)";
-        String mensaje = "Los datos se ingresaron correctamente";
+        String mensaje = "Los  datos se ingresaron correctamente";
         try{
             PreparedStatement pst = mysql.conectar.prepareStatement(aSQL);
             pst.setString(1, nomb);
